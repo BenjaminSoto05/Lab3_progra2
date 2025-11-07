@@ -1,0 +1,16 @@
+from functools import reduce
+
+print("Ejercicio 2: Producto de todos los elementos")
+lista_numeros = [1, 2, 3, 4, 5]
+# 'lambda acc, el:'
+# 'acc' es el producto acumulado, 'el' es el elemento actual.
+
+# 'acc * el':
+# El nuevo acumulador será el resultado de la multiplicación.
+
+# Proceso de ejemplo:
+# 24 * 5 = 120
+producto_total = reduce(lambda acc, el: acc * el, lista_numeros)
+
+print(f"Lista original: {lista_numeros}")
+print(f"Producto total: {producto_total}")
